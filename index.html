@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vyom Global</title>
+<meta name="description" content="Vyom Global makes games for Android.">
+<style>
+  :root {
+    --bg: #FFFDF7;
+    --surface: #F4EFE3;
+    --text: #2E2A27;
+    --muted: #6B645C;
+    --accent: #2E7D46;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #2E2A27;
+      --surface: #38332F;
+      --text: #F3EFE6;
+      --muted: #B5ADA2;
+      --accent: #6FCF8E;
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 16px 64px; }
+  h1 { font-size: 2rem; margin: 0 0 4px; }
+  .tag { color: var(--muted); margin: 0 0 32px; }
+  .app { background: var(--surface); border-radius: 12px; padding: 18px 20px; }
+  .app h2 { font-size: 1.2rem; margin: 0 0 4px; }
+  .app p { margin: 0 0 10px; }
+  a { color: var(--accent); text-underline-offset: 2px; }
+  footer { color: var(--muted); font-size: 0.9rem; margin-top: 48px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Vyom Global</h1>
+  <p class="tag">Games for Android.</p>
+
+  <section class="app">
+    <h2>Cheeky Koko</h2>
+    <p>A platformer where the level is out to get you. Coming to Google Play.</p>
+    <a href="cheekykoko/privacy/">Privacy policy</a>
+  </section>
+
+  <footer>Contact: <a href="mailto:vyomglobaltech@gmail.com">vyomglobaltech@gmail.com</a></footer>
+</main>
+</body>
+</html>
