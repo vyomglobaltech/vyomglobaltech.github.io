@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cheeky Koko — a platformer that lies to you</title>
+<meta name="description" content="Cheeky Koko is a lovingly unfair platformer for Android by Vyom Global. 500 sneaky levels, every one beatable.">
+<link rel="icon" href="img/icon.png">
+<meta property="og:title" content="Cheeky Koko">
+<meta property="og:description" content="A platformer that lies to you. 500 sneaky levels, every one beatable.">
+<meta property="og:image" content="https://vyomglobaltech.github.io/cheekykoko/img/feature.jpg">
+<meta property="og:url" content="https://vyomglobaltech.github.io/cheekykoko/">
+<meta property="og:type" content="website">
+<style>
+  :root {
+    --bg: #FFFDF7;
+    --surface: #F4EFE3;
+    --text: #2E2A27;
+    --muted: #6B645C;
+    --rule: #E3DCCD;
+    --accent: #2E7D46;
+    --koko: #E8553A;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #2E2A27;
+      --surface: #38332F;
+      --text: #F3EFE6;
+      --muted: #B5ADA2;
+      --rule: #4A443E;
+      --accent: #6FCF8E;
+      --koko: #FF7A5C;
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  main { max-width: 860px; margin: 0 auto; padding: 32px 16px 64px; }
+  a { color: var(--accent); text-underline-offset: 2px; overflow-wrap: anywhere; }
+  img { max-width: 100%; height: auto; display: block; }
+
+  .hero { display: flex; gap: 20px; align-items: center; margin-bottom: 20px; }
+  .hero img { width: 96px; height: 96px; border-radius: 22px; flex: none; }
+  h1 { font-size: 2.2rem; line-height: 1.1; margin: 0; }
+  .tag { color: var(--muted); margin: 4px 0 0; font-size: 1.1rem; }
+  .feature { border-radius: 16px; overflow: hidden; margin: 8px 0 20px; }
+
+  .cta { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin: 0 0 36px; }
+  .btn {
+    display: inline-block; padding: 12px 20px; border-radius: 999px;
+    background: var(--koko); color: #fff; text-decoration: none; font-weight: 600;
+  }
+  .btn.secondary { background: var(--surface); color: var(--text); }
+  .note { color: var(--muted); font-size: 0.95rem; }
+
+  h2 { font-size: 1.35rem; margin: 40px 0 10px; padding-top: 16px; border-top: 1px solid var(--rule); }
+  p, ul { margin: 0 0 14px; }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 6px; }
+
+  .shots { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; margin: 0 0 14px; }
+  .shots img { border-radius: 12px; background: var(--surface); }
+
+  .boosters { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; margin: 0 0 14px; }
+  .boosters div { background: var(--surface); border-radius: 12px; padding: 14px 16px; }
+  .boosters b { display: block; margin-bottom: 2px; }
+
+  footer { color: var(--muted); font-size: 0.9rem; margin-top: 48px; border-top: 1px solid var(--rule); padding-top: 16px; }
+  footer p { margin: 0 0 6px; }
+</style>
+</head>
+<body>
+<main>
+  <header class="hero">
+    <img src="img/icon.png" alt="Cheeky Koko icon: an orange ball with red devil horns and a cheeky grin" width="96" height="96">
+    <div>
+      <h1>Cheeky Koko</h1>
+      <p class="tag">A platformer that lies to you. 500 sneaky levels, every one beatable.</p>
+    </div>
+  </header>
+
+  <div class="feature">
+    <img src="img/feature.jpg" alt="Cheeky Koko: a lovingly unfair platformer. 500 levels, every one lies." width="1024" height="500">
+  </div>
+
+  <div class="cta">
+    <a class="btn" href="https://play.google.com/store/apps/details?id=com.vyom.cheekykoko">Google Play</a>
+    <a class="btn secondary" href="privacy/">Privacy policy</a>
+    <span class="note">Android. Free, with ads and optional in-app purchases. Coming soon to Google Play.</span>
+  </div>
+
+  <p>The floor looks solid. It isn't. The door looks like the exit. It's lying. That spike wasn't there a second ago.</p>
+  <p>Cheeky Koko is a lovingly unfair platformer. Every level looks simple, and every level has a trick waiting for you. Run, jump, die, laugh, and try again. You'll get it next time. Probably.</p>
+
+  <h2>How it lies</h2>
+  <ul>
+    <li>Floors that crumble the moment you land</li>
+    <li>Spikes that pop up where you were about to step</li>
+    <li>Blocks that drop on you the moment you walk underneath</li>
+    <li>Fake doors, sliding walls and rooms that flip gravity</li>
+    <li>A cheeky purple imp who built every level and never stops teasing you</li>
+  </ul>
+
+  <h2>Screenshots</h2>
+  <div class="shots">
+    <img src="img/shot_01.jpg" alt="Koko stands on a floor that is about to give way" loading="lazy" width="1280" height="720">
+    <img src="img/shot_02.jpg" alt="Two doors, and the obvious one is the fake" loading="lazy" width="1280" height="720">
+    <img src="img/shot_03.jpg" alt="Spikes rising out of the floor under Koko's feet" loading="lazy" width="1280" height="720">
+    <img src="img/shot_04.jpg" alt="A block drops from the ceiling as Koko walks underneath" loading="lazy" width="1280" height="720">
+    <img src="img/shot_05.jpg" alt="Koko tries the level again after a trap" loading="lazy" width="1280" height="720">
+    <img src="img/shot_08.jpg" alt="Every level beatable: the test bot clears a late level" loading="lazy" width="1280" height="720">
+  </div>
+
+  <h2>500 levels, 20 chapters</h2>
+  <p>Travel from sunny meadows through caves and frozen rifts all the way down to the Devil's Throne. Each chapter has its own look and its own nasty new ideas.</p>
+
+  <h2>Every level can be beaten</h2>
+  <p>It's unfair, never impossible. Every single level has been beaten by our test bot, so when you die, the trick was fair. You just didn't see it coming.</p>
+
+  <h2>Need a hand?</h2>
+  <div class="boosters">
+    <div><b>Hint</b> Shows where the hidden traps are.</div>
+    <div><b>Route</b> Watch a winning run of the level.</div>
+    <div><b>Slow-Mo</b> Slows the level down for tricky timing.</div>
+    <div><b>Revive</b> Carry on from where you died.</div>
+    <div><b>Devil Run</b> A few seconds where nothing can hurt you.</div>
+  </div>
+
+  <h2>More to enjoy</h2>
+  <ul>
+    <li>Unlock 8 Koko skins as you reach new chapters</li>
+    <li>Daily bonus rewards</li>
+    <li>Quick levels, perfect for short breaks</li>
+    <li>Simple controls: left, right, jump</li>
+  </ul>
+  <p>Cheeky Koko is free to play. It contains ads and optional in-app purchases. Remove Ads is a one-time purchase.</p>
+  <p><strong>Think you can't be fooled? Koko thought so too.</strong></p>
+
+  <footer>
+    <p>Cheeky Koko is made by <a href="../">Vyom Global</a>. Package <code>com.vyom.cheekykoko</code>.</p>
+    <p>Support and press: <a href="mailto:vyomglobaltech@gmail.com">vyomglobaltech@gmail.com</a> · <a href="privacy/">Privacy policy</a></p>
+  </footer>
+</main>
+</body>
+</html>
